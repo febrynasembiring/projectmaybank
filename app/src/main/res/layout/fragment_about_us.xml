@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDUCATION CENTER"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="	#A52A2A"
+
+        />
+    <TextView
+        android:layout_marginTop="55sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="textStart"
+        android:text="We are founded with the vision of democratizing data science skills and equip every professional with a set of core skills across the various domains of data visualization, regression, data modeling, machine learning, and statistical programming literacy. Whether you’re a marketing executive, a business analyst, an entrepreneur, or a financial market professional, we want to help you be a rockstar and a highly effective executive."/>
+
+</FrameLayout>

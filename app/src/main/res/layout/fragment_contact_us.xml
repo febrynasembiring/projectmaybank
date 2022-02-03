@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" FOLLOW US ON OUR SOCIAL MEDIA BELOW"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="	#A52A2A"
+        />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="90dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="40dp"
+        android:src="@drawable/instagram"
+        />
+
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="90dp"
+        android:layout_height="272dp"
+        android:src="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="90dp"
+        android:layout_height="272dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="90dp"
+        android:layout_height="272dp"
+        android:src="@drawable/twitter" />
+</FrameLayout>
