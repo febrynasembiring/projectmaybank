@@ -67,6 +67,10 @@ public class ContactUs extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_contact_us, container, false);
+
+
+
+
     }
 
 

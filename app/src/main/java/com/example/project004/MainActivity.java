@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.project004.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
@@ -24,8 +25,8 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private ActionBarDrawerToggle toggle;
-    ImageView twitter, linkedin, facebook, instagram;
-   // private TextView email;
+  //  ImageView twitter, linkedin, facebook, instagram;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +87,25 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+        });
+
+
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+        View headerView = getLayoutInflater().inflate(R.layout.nav_header_layout,
+                navigationView, false);
+        navigationView.addHeaderView(headerView);
+
+        TextView email = headerView.findViewById(R.id.email);
+        email.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(), "Test Header Click", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.mail.com"));
+                startActivity(intent);
+            }
         });
     }
 
